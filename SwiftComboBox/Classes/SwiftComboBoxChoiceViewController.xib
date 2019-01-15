@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftComboBoxChoiceViewController" customModule="SwiftComboBox" customModuleProvider="target">
+            <connections>
+                <outlet property="doneBarButtonItem" destination="IcL-F7-CPg" id="tUK-ii-2xm"/>
+                <outlet property="navigationBar" destination="q2f-4G-9ot" id="cga-Yx-SOS"/>
+                <outlet property="searchBar" destination="w9d-xc-Qog" id="RHT-yH-fsx"/>
+                <outlet property="searchBarButtonItem" destination="aZ5-gb-eQx" id="XSd-i6-TaX"/>
+                <outlet property="searchBarHeight" destination="tFP-Wr-I1v" id="kCa-LW-cYb"/>
+                <outlet property="tableView" destination="b2I-eu-zwM" id="JdC-S2-ht6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2f-4G-9ot">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DeQ-Ui-OOT"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem id="gRO-vO-MZY">
+                            <barButtonItem key="leftBarButtonItem" systemItem="search" id="aZ5-gb-eQx">
+                                <connections>
+                                    <action selector="searchBarButtonItemTapped:" destination="-1" id="tRv-WP-GP4"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" style="done" systemItem="cancel" id="IcL-F7-CPg">
+                                <connections>
+                                    <action selector="doneBarButtonItemTapped:" destination="-1" id="0ac-yG-45f"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-xc-Qog">
+                    <rect key="frame" x="0.0" y="44" width="375" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="tFP-Wr-I1v"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-eu-zwM">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w9d-xc-Qog" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="14P-03-HHY"/>
+                <constraint firstItem="q2f-4G-9ot" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="14w-qt-0yr"/>
+                <constraint firstItem="w9d-xc-Qog" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="HXv-eS-UNY"/>
+                <constraint firstItem="b2I-eu-zwM" firstAttribute="top" secondItem="w9d-xc-Qog" secondAttribute="bottom" id="ME6-Vn-4Yz"/>
+                <constraint firstItem="q2f-4G-9ot" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Xb1-OD-fX3"/>
+                <constraint firstItem="b2I-eu-zwM" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="kHE-5E-5yk"/>
+                <constraint firstItem="b2I-eu-zwM" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="kPr-pC-b6a"/>
+                <constraint firstItem="b2I-eu-zwM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mf8-g3-EV5"/>
+                <constraint firstItem="q2f-4G-9ot" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uMR-kD-pqI"/>
+                <constraint firstItem="w9d-xc-Qog" firstAttribute="top" secondItem="q2f-4G-9ot" secondAttribute="bottom" id="xai-U4-hiJ"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

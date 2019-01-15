@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftComboBox" customModule="SwiftComboBox" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowImage" destination="VDZ-gm-VZF" id="9fM-aA-auZ"/>
+                <outlet property="backgroundView" destination="xnE-gb-xNG" id="Q9v-0d-y0E"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="5fe-vc-hOB"/>
+                <outlet property="label" destination="EMz-9a-8IR" id="KjM-VM-0Zx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnE-gb-xNG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftComboBoxDownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-gm-VZF">
+                            <rect key="frame" x="343" y="18" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="nqf-Y0-KZY"/>
+                                <constraint firstAttribute="width" constant="24" id="u0M-FY-y3l"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMz-9a-8IR">
+                            <rect key="frame" x="8" y="8" width="327" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EMz-9a-8IR" secondAttribute="bottom" constant="8" id="0br-v8-QbB"/>
+                        <constraint firstAttribute="trailing" secondItem="VDZ-gm-VZF" secondAttribute="trailing" constant="8" id="VGp-QG-Paa"/>
+                        <constraint firstItem="EMz-9a-8IR" firstAttribute="leading" secondItem="xnE-gb-xNG" secondAttribute="leading" constant="8" id="W1c-V4-cEu"/>
+                        <constraint firstItem="VDZ-gm-VZF" firstAttribute="leading" secondItem="EMz-9a-8IR" secondAttribute="trailing" constant="8" id="ZEV-mq-1nd"/>
+                        <constraint firstItem="EMz-9a-8IR" firstAttribute="top" secondItem="xnE-gb-xNG" secondAttribute="top" constant="8" id="adH-lD-LRW"/>
+                        <constraint firstItem="VDZ-gm-VZF" firstAttribute="centerY" secondItem="xnE-gb-xNG" secondAttribute="centerY" id="sHe-Ul-ioZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xnE-gb-xNG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7eS-9n-5q7"/>
+                <constraint firstItem="xnE-gb-xNG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="AKu-KO-0Mx"/>
+                <constraint firstItem="xnE-gb-xNG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Miz-p7-iG2"/>
+                <constraint firstItem="xnE-gb-xNG" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Usv-bI-s40"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.40000000000001" y="-119.64017991004499"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SwiftComboBoxDownArrow" width="96" height="96"/>
+    </resources>
+</document>
