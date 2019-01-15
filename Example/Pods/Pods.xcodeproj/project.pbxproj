@@ -10,6 +10,7 @@
 		0FEC4C73765C0EBCA2C1CEAC74D1C20A /* Pods-SwiftComboBox_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54183A51BE8A7F246BBDEB82186A50D /* Pods-SwiftComboBox_Example-dummy.m */; };
 		20746301DE909E15A8E02FF96600E074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		2B50585B71357294C3AC0D02BC0F0E10 /* SwiftComboBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D2C2694734FBD5BCAD2F7C342BC8A6 /* SwiftComboBox-dummy.m */; };
+		30DC754921EE0F2A0007645A /* SwiftComboBoxAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC754821EE0F2A0007645A /* SwiftComboBoxAssets.xcassets */; };
 		3C218940BC8B7ECAAA5B80E802E86E77 /* SwiftComboBoxChoiceViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 14E0C513547597EDCB9D0D7409202CF4 /* SwiftComboBoxChoiceViewController.xib */; };
 		4E897C18883D1123B0BD6EC779AB7A5B /* SwiftComboBoxChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2DFC21EA220301EBD56F87E9848CE /* SwiftComboBoxChoiceViewController.swift */; };
 		5A7FECFED7932827349F18478F8C2DDB /* SwiftComboBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3698C0E7726839CDA8A27FF32A29461 /* SwiftComboBox.swift */; };
@@ -45,10 +46,11 @@
 /* Begin PBXFileReference section */
 		14E0C513547597EDCB9D0D7409202CF4 /* SwiftComboBoxChoiceViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SwiftComboBoxChoiceViewController.xib; path = SwiftComboBox/Classes/SwiftComboBoxChoiceViewController.xib; sourceTree = "<group>"; };
 		1B0965734AB05FCCFE60B9ADAF46F6CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DC754821EE0F2A0007645A /* SwiftComboBoxAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = SwiftComboBoxAssets.xcassets; path = SwiftComboBox/Assets/SwiftComboBoxAssets.xcassets; sourceTree = "<group>"; };
 		381F0D604BA457CD6DF51F23A0E79434 /* Pods-SwiftComboBox_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftComboBox_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		409F6E6E608FC529D31418E44F25F218 /* Pods-SwiftComboBox_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftComboBox_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		52921795651262952EB7A7CF3877EEC4 /* Pods-SwiftComboBox_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftComboBox_Tests-resources.sh"; sourceTree = "<group>"; };
-		635FC2A0D0EA0777F4744A84D2D74C03 /* Pods_SwiftComboBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftComboBox_Tests.framework; path = "Pods-SwiftComboBox_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		635FC2A0D0EA0777F4744A84D2D74C03 /* Pods_SwiftComboBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftComboBox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6666981C398EB4C54FF230B428FE9F50 /* SwiftComboBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftComboBox.modulemap; sourceTree = "<group>"; };
 		736D172F5AECDBC45E862B64AD521CA3 /* SwiftComboBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftComboBox-umbrella.h"; sourceTree = "<group>"; };
 		740BCD81E32B102D7499D27F0C8E8F0B /* Pods-SwiftComboBox_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftComboBox_Example.modulemap"; sourceTree = "<group>"; };
@@ -56,16 +58,16 @@
 		7757E5C3F368D3211973D82D1924D08B /* Pods-SwiftComboBox_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftComboBox_Example-resources.sh"; sourceTree = "<group>"; };
 		80E39647C192982A819D203513B01BFD /* Pods-SwiftComboBox_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftComboBox_Tests-dummy.m"; sourceTree = "<group>"; };
 		81893F6CA8C97FA22828B3E6D47EB139 /* SwiftComboBoxTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftComboBoxTableViewCell.swift; path = SwiftComboBox/Classes/SwiftComboBoxTableViewCell.swift; sourceTree = "<group>"; };
-		84277F2969F3DDF0317074F39E51AA4E /* SwiftComboBox.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwiftComboBox.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84277F2969F3DDF0317074F39E51AA4E /* SwiftComboBox.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SwiftComboBox.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		849D0552B42B84DEC2DF33E71E5CC800 /* Pods-SwiftComboBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftComboBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86FE8C8EC9DBD48CEFFBAE23DEA7315C /* Pods-SwiftComboBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftComboBox_Example.release.xcconfig"; sourceTree = "<group>"; };
 		888836755D1E1DF208D63902B5E204D6 /* Pods-SwiftComboBox_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftComboBox_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8C46E397AB74180B0300BB1ED7CF3F86 /* SwiftComboBoxPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftComboBoxPresentationController.swift; path = SwiftComboBox/Classes/SwiftComboBoxPresentationController.swift; sourceTree = "<group>"; };
-		92EBD8D6A6804A8E9E310D6215B0719C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92EBD8D6A6804A8E9E310D6215B0719C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947CD40C0548DDD48A02ADDFB2ED28EE /* Pods-SwiftComboBox_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftComboBox_Example-umbrella.h"; sourceTree = "<group>"; };
 		982B3E1BDF452B0B86C64FAD135661D0 /* Pods-SwiftComboBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftComboBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9CB1BF484892D38A54D077EE6CE5CFA6 /* SwiftComboBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftComboBox.framework; path = SwiftComboBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB1BF484892D38A54D077EE6CE5CFA6 /* SwiftComboBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftComboBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1214D2979CD0F9374947C39FAB5DD28 /* SwiftComboBoxTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SwiftComboBoxTableViewCell.xib; path = SwiftComboBox/Classes/SwiftComboBoxTableViewCell.xib; sourceTree = "<group>"; };
 		A2D2C2694734FBD5BCAD2F7C342BC8A6 /* SwiftComboBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftComboBox-dummy.m"; sourceTree = "<group>"; };
 		A3C2DFC21EA220301EBD56F87E9848CE /* SwiftComboBoxChoiceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftComboBoxChoiceViewController.swift; path = SwiftComboBox/Classes/SwiftComboBoxChoiceViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +79,12 @@
 		B3698C0E7726839CDA8A27FF32A29461 /* SwiftComboBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftComboBox.swift; path = SwiftComboBox/Classes/SwiftComboBox.swift; sourceTree = "<group>"; };
 		B537F210E97DD88328346D1154103C70 /* Pods-SwiftComboBox_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftComboBox_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C8DC55935444238F1D14B829C5BEE4E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5B375D0542D4614DA329FB5C7B234D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D5B375D0542D4614DA329FB5C7B234D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DFD09E84C8951361E7ED899882887B8C /* Pods-SwiftComboBox_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftComboBox_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E1A0881774E50228793C418CEA3052F4 /* Pods-SwiftComboBox_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftComboBox_Tests.modulemap"; sourceTree = "<group>"; };
 		E95FEA90A1202C7FAEB3A8CC0459D1B4 /* SwiftComboBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftComboBox.xcconfig; sourceTree = "<group>"; };
-		F7F6BD3FB848E35FF0F928E301439545 /* Pods_SwiftComboBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftComboBox_Example.framework; path = "Pods-SwiftComboBox_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F6BD3FB848E35FF0F928E301439545 /* Pods_SwiftComboBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftComboBox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8418418DDE12E7AD9A710F9B3820D3F /* Pods-SwiftComboBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftComboBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +233,7 @@
 		D7C7FB617A5E4C49B0E256E0122AAC08 /* SwiftComboBox */ = {
 			isa = PBXGroup;
 			children = (
+				30DC754821EE0F2A0007645A /* SwiftComboBoxAssets.xcassets */,
 				B3698C0E7726839CDA8A27FF32A29461 /* SwiftComboBox.swift */,
 				A83BA9C34BDDA4372BBD60F7EBB2B44B /* SwiftComboBox.xib */,
 				A3C2DFC21EA220301EBD56F87E9848CE /* SwiftComboBoxChoiceViewController.swift */,
@@ -364,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DC754921EE0F2A0007645A /* SwiftComboBoxAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,8 +690,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
