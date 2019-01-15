@@ -1,0 +1,6 @@
+framework module SwiftComboBox {
+  umbrella header "SwiftComboBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

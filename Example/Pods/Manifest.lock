@@ -1,0 +1,16 @@
+PODS:
+  - SwiftComboBox (0.1.0)
+
+DEPENDENCIES:
+  - SwiftComboBox (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftComboBox:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftComboBox: e984afa78343e03ea34770de0085e6652cbbf868
+
+PODFILE CHECKSUM: 54839f512018f5148e6addf7d45ed28d2f4b1008
+
+COCOAPODS: 1.5.3

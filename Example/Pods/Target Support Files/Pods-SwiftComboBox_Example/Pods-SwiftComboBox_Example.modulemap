@@ -1,0 +1,6 @@
+framework module Pods_SwiftComboBox_Example {
+  umbrella header "Pods-SwiftComboBox_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
