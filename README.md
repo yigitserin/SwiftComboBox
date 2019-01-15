@@ -22,7 +22,7 @@ pod 'SwiftComboBox'
 
 ## Author
 
-yigitserin, yigit.serin@cemametrix.com.tr
+yigitserin, yigitserin@gmail.com
 
 ## License
 

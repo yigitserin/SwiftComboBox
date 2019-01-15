@@ -17,6 +17,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var arrowImage: UIImageView!
     
+    public var effectType: SwiftComboBoxEffectType = .dark
     public var didSelectRow: SwiftComboBoxSelectClosure?
     public var dataSource:[String] = []{
         didSet{
@@ -96,6 +97,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
         contentView.layer.borderWidth = 1.0
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
+        //arrowImage.image = UIImage(named: "SwiftComboBoxDownArrow", in: Bundle(for: SwiftComboBox.self), compatibleWith: nil)
     }
     
     private func setTap(){
@@ -116,6 +118,9 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     }
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return SwiftComboBoxPresentationController(presentedViewController: presented, presenting: presenting)
+        
+        let swiftComboBoxPresentationController = SwiftComboBoxPresentationController(presentedViewController: presented, presenting: presenting)
+        swiftComboBoxPresentationController.effectType = self.effectType
+        return swiftComboBoxPresentationController
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum SwiftComboBoxEffectType{
+public enum SwiftComboBoxEffectType{
     case dark
     case blur
 }
