@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftComboBox" customModule="SwiftComboBox" customModuleProvider="target">
             <connections>
-                <outlet property="arrowImage" destination="VDZ-gm-VZF" id="9fM-aA-auZ"/>
+                <outlet property="arrowShape" destination="xnE-gb-xNG" id="Dxf-O8-aVa"/>
                 <outlet property="backgroundView" destination="xnE-gb-xNG" id="Q9v-0d-y0E"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="5fe-vc-hOB"/>
                 <outlet property="label" destination="EMz-9a-8IR" id="KjM-VM-0Zx"/>
@@ -25,28 +25,29 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnE-gb-xNG">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftComboBoxDownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-gm-VZF">
-                            <rect key="frame" x="343" y="18" width="24" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="24" id="nqf-Y0-KZY"/>
-                                <constraint firstAttribute="width" constant="24" id="u0M-FY-y3l"/>
-                            </constraints>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMz-9a-8IR">
-                            <rect key="frame" x="8" y="8" width="327" height="44"/>
+                            <rect key="frame" x="8" y="8" width="335" height="44"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhe-tH-E2u" customClass="SwiftComboBoxTriangleView" customModule="SwiftComboBox">
+                            <rect key="frame" x="351" y="22" width="16" height="16"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="48G-WM-ZL4"/>
+                                <constraint firstAttribute="width" constant="16" id="c7Y-eG-l5i"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="EMz-9a-8IR" secondAttribute="bottom" constant="8" id="0br-v8-QbB"/>
-                        <constraint firstAttribute="trailing" secondItem="VDZ-gm-VZF" secondAttribute="trailing" constant="8" id="VGp-QG-Paa"/>
-                        <constraint firstItem="EMz-9a-8IR" firstAttribute="leading" secondItem="xnE-gb-xNG" secondAttribute="leading" constant="8" id="W1c-V4-cEu"/>
-                        <constraint firstItem="VDZ-gm-VZF" firstAttribute="leading" secondItem="EMz-9a-8IR" secondAttribute="trailing" constant="8" id="ZEV-mq-1nd"/>
-                        <constraint firstItem="EMz-9a-8IR" firstAttribute="top" secondItem="xnE-gb-xNG" secondAttribute="top" constant="8" id="adH-lD-LRW"/>
-                        <constraint firstItem="VDZ-gm-VZF" firstAttribute="centerY" secondItem="xnE-gb-xNG" secondAttribute="centerY" id="sHe-Ul-ioZ"/>
+                        <constraint firstItem="EMz-9a-8IR" firstAttribute="top" secondItem="xnE-gb-xNG" secondAttribute="top" constant="8" id="9gr-k0-Jqi"/>
+                        <constraint firstItem="Uhe-tH-E2u" firstAttribute="centerY" secondItem="xnE-gb-xNG" secondAttribute="centerY" id="OyX-GN-DZE"/>
+                        <constraint firstAttribute="trailing" secondItem="Uhe-tH-E2u" secondAttribute="trailing" constant="8" id="VfQ-NS-OQC"/>
+                        <constraint firstItem="EMz-9a-8IR" firstAttribute="leading" secondItem="xnE-gb-xNG" secondAttribute="leading" constant="8" id="uNU-xW-TfC"/>
+                        <constraint firstAttribute="bottom" secondItem="EMz-9a-8IR" secondAttribute="bottom" constant="8" id="xk6-jN-4rG"/>
+                        <constraint firstItem="Uhe-tH-E2u" firstAttribute="leading" secondItem="EMz-9a-8IR" secondAttribute="trailing" constant="8" id="yC5-Yf-RmK"/>
                     </constraints>
                 </view>
             </subviews>
@@ -61,7 +62,4 @@
             <point key="canvasLocation" x="130.40000000000001" y="-119.64017991004499"/>
         </view>
     </objects>
-    <resources>
-        <image name="SwiftComboBoxDownArrow" width="96" height="96"/>
-    </resources>
 </document>
