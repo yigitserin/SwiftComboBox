@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftComboBox_Example' do
+  pod 'SwiftComboBox', :path => '../'
+
+  target 'SwiftComboBox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
