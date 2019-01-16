@@ -18,10 +18,26 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var triangle: SwiftComboBoxTriangleView!
     
     //Visual customization parameters
-    public var arrowColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
-    public var borderColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
-    public var disabledBackgroundColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
     public var effectType: SwiftComboBoxEffectType = .dark
+    public var arrowColor: UIColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1.0){
+        didSet{
+            triangle.arrowColor = arrowColor
+        }
+    }
+    public var borderColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0){
+        didSet{
+            contentView.layer.borderColor = borderColor.cgColor
+        }
+    }
+    public var disabledBackgroundColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0){
+        didSet{
+            if isEnabled{
+                backgroundView.backgroundColor = UIColor.white
+            }else{
+                backgroundView.backgroundColor = disabledBackgroundColor
+            }
+        }
+    }
     
     public var context: UIViewController?
     public var didSelectRow: SwiftComboBoxSelectClosure?

@@ -17,17 +17,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         swiftComboBox.context = self
-        swiftComboBox.dataSource = ["Apple", "Samsung", "Microsoft", "Google", "Intel", "IBM", "Facebook", "Tencent", "Oracle", "Very Long Item To Test The Two Line Or Whatever Dummy Lorem","Apple", "Samsung", "Microsoft", "Google", "Intel"]
+        swiftComboBox.dataSource = ["Apple", "Samsung", "Microsoft", "Google", "Intel", "IBM", "Facebook", "Tencent", "Oracle"]
         swiftComboBox.didSelectRow = { (index: Int, item: String) in
             print(item)
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //swiftComboBox.disabledBackgroundColor = UIColor.green
+        //swiftComboBox.arrowColor = UIColor.red
+        //swiftComboBox.borderColor = UIColor.blue
+        //swiftComboBox.effectType = .blur
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
