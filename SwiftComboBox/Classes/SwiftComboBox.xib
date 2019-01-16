@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftComboBox" customModule="SwiftComboBox" customModuleProvider="target">
             <connections>
-                <outlet property="arrowShape" destination="xnE-gb-xNG" id="Dxf-O8-aVa"/>
                 <outlet property="backgroundView" destination="xnE-gb-xNG" id="Q9v-0d-y0E"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="5fe-vc-hOB"/>
                 <outlet property="label" destination="EMz-9a-8IR" id="KjM-VM-0Zx"/>
+                <outlet property="triangle" destination="Uhe-tH-E2u" id="hgH-hO-6gL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

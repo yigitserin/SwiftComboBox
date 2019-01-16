@@ -9,7 +9,7 @@ import UIKit
 
 class SwiftComboBoxTriangleView: UIView {
     
-    var arrowColor: UIColor = UIColor.black
+    public var arrowColor: UIColor = UIColor.black
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -15,10 +15,15 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var arrowShape: UIView!
+    @IBOutlet weak var triangle: SwiftComboBoxTriangleView!
+    
+    //Visual customization parameters
+    public var arrowColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+    public var borderColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+    public var disabledBackgroundColor: UIColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+    public var effectType: SwiftComboBoxEffectType = .dark
     
     public var context: UIViewController?
-    public var effectType: SwiftComboBoxEffectType = .dark
     public var didSelectRow: SwiftComboBoxSelectClosure?
     public var dataSource:[String] = []{
         didSet{
@@ -44,7 +49,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
             if isEnabled{
                 backgroundView.backgroundColor = UIColor.white
             }else{
-                backgroundView.backgroundColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0)
+                backgroundView.backgroundColor = disabledBackgroundColor
             }
         }
     }
@@ -94,10 +99,13 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     }
     
     private func setUI(){
-        contentView.layer.borderColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
+        backgroundColor = UIColor.clear
+        contentView.layer.borderColor = borderColor.cgColor
         contentView.layer.borderWidth = 1.0
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
+        
+        triangle.arrowColor = arrowColor
     }
     
     private func setTap(){
