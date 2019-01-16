@@ -17,6 +17,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var arrowShape: UIView!
     
+    public var context: UIViewController?
     public var effectType: SwiftComboBoxEffectType = .dark
     public var didSelectRow: SwiftComboBoxSelectClosure?
     public var dataSource:[String] = []{
@@ -113,7 +114,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
         controller.modalPresentationStyle = .custom
         controller.originalDataSource = convertedDataSource
         controller.swiftComboBox = self
-        self.window?.rootViewController?.present(controller, animated: true, completion: nil)
+        context?.present(controller, animated: true, completion: nil)
     }
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {

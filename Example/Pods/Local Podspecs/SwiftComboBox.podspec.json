@@ -1,6 +1,6 @@
 {
   "name": "SwiftComboBox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "ComboBox input for iOS.",
   "description": "\"ComboBox input for iOS, written in Swift.\"",
   "homepage": "https://github.com/yigitserin/SwiftComboBox",
@@ -13,16 +13,11 @@
   },
   "source": {
     "git": "https://github.com/yigitserin/SwiftComboBox.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "swift_version": "4.1",
-  "source_files": "SwiftComboBox/Classes/**/*",
-  "resource_bundles": {
-    "SwiftComboBox": [
-      "SwiftComboBox/Assets/*.png"
-    ]
-  }
+  "source_files": "SwiftComboBox/Classes/**/*"
 }
