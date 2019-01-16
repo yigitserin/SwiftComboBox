@@ -24,6 +24,8 @@ class ViewController: UIViewController {
             print(item)
         }
         
+        //swiftComboBox.selectedIndex = 8
+        
         //swiftComboBox.disabledBackgroundColor = UIColor.green
         //swiftComboBox.arrowColor = UIColor.red
         //swiftComboBox.borderColor = UIColor.blue

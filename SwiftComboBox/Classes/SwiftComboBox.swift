@@ -80,9 +80,30 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
         didSet{
             if let item = selectedItem{
                 labelString = item.text
+                
+                if selectedIndex != item.id{
+                    selectedIndex = item.id
+                }
+                
                 didSelectRow?(item.id, item.text)
             }else{
                 labelString = ""
+                selectedIndex = nil
+            }
+        }
+    }
+    
+    public var selectedIndex: Int?{
+        didSet{
+            if let index = selectedIndex{
+                if convertedDataSource.indices.contains(index){
+                    let item = convertedDataSource[index]
+                    
+                    if selectedItem?.id != item.id{
+                        selectedItem = item
+                    }
+     
+                }
             }
         }
     }
@@ -122,6 +143,8 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
         contentView.layer.masksToBounds = true
         
         triangle.arrowColor = arrowColor
+        
+        label.text = labelString
     }
     
     private func setTap(){
@@ -132,13 +155,16 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     @objc func didTapComboBox(){
         if !isEnabled{ return }
         
-        //Launch choice
-        let controller = SwiftComboBoxChoiceViewController(nibName: "SwiftComboBoxChoiceViewController", bundle: Bundle(for: SwiftComboBox.self))
-        controller.transitioningDelegate = self
-        controller.modalPresentationStyle = .custom
-        controller.originalDataSource = convertedDataSource
-        controller.swiftComboBox = self
-        context?.present(controller, animated: true, completion: nil)
+        if let context = context{
+            let controller = SwiftComboBoxChoiceViewController(nibName: "SwiftComboBoxChoiceViewController", bundle: Bundle(for: SwiftComboBox.self))
+            controller.transitioningDelegate = self
+            controller.modalPresentationStyle = .custom
+            controller.originalDataSource = convertedDataSource
+            controller.swiftComboBox = self
+            context.present(controller, animated: true, completion: nil)
+        }else{
+            print("Please set context for SwiftComboBox.")
+        }
     }
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
