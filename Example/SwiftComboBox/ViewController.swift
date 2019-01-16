@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Version 0.1.3
+        
         swiftComboBox.context = self
         swiftComboBox.dataSource = ["Apple", "Samsung", "Microsoft", "Google", "Intel", "IBM", "Facebook", "Tencent", "Oracle"]
         swiftComboBox.didSelectRow = { (index: Int, item: String) in
