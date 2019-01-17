@@ -1,5 +1,5 @@
 PODS:
-  - SwiftComboBox (0.1.4)
+  - SwiftComboBox (0.1.5)
 
 DEPENDENCIES:
   - SwiftComboBox (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftComboBox: 465ba5e5a0bfd89fc077bf6f1ee2b1cfb5cdd4ad
+  SwiftComboBox: 24f87ab35630088a598180525b6d68a24d8e7dcc
 
 PODFILE CHECKSUM: 54839f512018f5148e6addf7d45ed28d2f4b1008
 
