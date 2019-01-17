@@ -17,10 +17,16 @@ class SwiftComboBoxTriangleView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setUI()
+    }
+    
+    private func setUI(){
+        self.backgroundColor = UIColor.clear
     }
 
     override func draw(_ rect: CGRect) {
