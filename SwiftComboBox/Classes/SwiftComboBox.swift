@@ -51,6 +51,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
             }
             
             if let firstItem = convertedDataSource.first{
+                ignoreNextSelectedItem = true
                 selectedItem = firstItem
             }else{
                 selectedItem = nil
@@ -59,6 +60,7 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     }
     
     private var convertedDataSource: [SwiftComboBoxData] = []
+    private var ignoreNextSelectedItem = false
     
     public var isEnabled: Bool = true{
         didSet{
@@ -79,13 +81,19 @@ public class SwiftComboBox: UIView, UIViewControllerTransitioningDelegate {
     public var selectedItem: SwiftComboBoxData?{
         didSet{
             if let item = selectedItem{
+                
                 labelString = item.text
                 
                 if selectedIndex != item.id{
                     selectedIndex = item.id
                 }
                 
-                didSelectRow?(item.id, item.text)
+                if ignoreNextSelectedItem{
+                    ignoreNextSelectedItem = false
+                }else{
+                    didSelectRow?(item.id, item.text)
+                }
+                
             }else{
                 labelString = ""
                 selectedIndex = nil
