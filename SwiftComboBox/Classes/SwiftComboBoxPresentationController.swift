@@ -19,7 +19,7 @@ class SwiftComboBoxPresentationController : UIPresentationController {
     var effectType: SwiftComboBoxEffectType = .dark
     
     override var frameOfPresentedViewInContainerView : CGRect {
-        return CGRect(x: 0, y: UIScreen.main.bounds.height/2, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/2)
+        return CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
     
     override func presentationTransitionWillBegin() {

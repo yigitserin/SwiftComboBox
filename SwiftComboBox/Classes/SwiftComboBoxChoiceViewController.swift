@@ -38,6 +38,10 @@ class SwiftComboBoxChoiceViewController: UIViewController {
     @IBAction func doneBarButtonItemTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder() // hides the keyboard.
+    }
     
     var swiftComboBox: SwiftComboBox?
     
